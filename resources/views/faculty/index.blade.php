@@ -406,14 +406,14 @@
                                                         </li>
 
 
-                                                     
+
 
 
 
                                                         <li><a href="{{ route('logout') }}" onclick="event.preventDefault();
                                                  document.getElementById('logout-form').submit();"><span class="edu-icon edu-locked author-log-ic"></span>Log Out</a>
 
-                                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                                                 @csrf
                                                             </form>
                                                         </li>
@@ -1081,87 +1081,81 @@
             </div>
         </div>
 
-        <div class ="container-fluid">
-<div class ="row">
-<div class = "col-md-6">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
 
-<form>
+                    <form>
 
 
-    <div class='col-md-6'>
-      
-        <div class="form-group">
-        <label for="Time Star">Time End</label>
-            <div class='input-group date' id='datetimepicker6'>
-            
-                <input type='text' class="form-control" />
-                <span class="input-group-addon">
-                    <span class="glyphicon glyphicon-calendar"></span>
-                </span>
+                        <div class='col-md-6'>
+
+                            <div class="form-group">
+                                <label for="Time Star">Time End</label>
+                                <div class='input-group date' id='datetimepicker6'>
+
+                                    <input type='text' class="form-control" />
+                                    <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-calendar"></span>
+                                    </span>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <div class='col-md-6'>
+                            <label for="timeend">Time End</label>
+                            <div class="form-group">
+                                <div class='input-group date' id='datetimepicker7'>
+
+                                    <input type='text' class="form-control" name="timeend" />
+                                    <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-calendar"></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='col-md-6'>
+
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Day</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>Friday</option>
+                                    <option>Saturday</option>
+                                    <option>Sunday</option>
+                                    <option>Monday</option>
+                                    <option>Tuesday</option>
+                                    <option>Wednesday</option>
+                                    <option>Thursday</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+
+                        <div class='col-md-6'>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Number of student</label>
+                                <input type="number" min="0" class="form-control" id="exampleFormControlInput1" placeholder="00">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                        <div class="col text-center">
+
+                        <button type="button" class="btn btn-success">Save</button>
+                        </div>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <p>anik </p>
+                </div>
             </div>
         </div>
-
-
-
-    </div>
-    <div class='col-md-6'>
-    <label for="timeend">Time End</label>
-        <div class="form-group">
-            <div class='input-group date' id='datetimepicker7'>
-           
-                <input type='text' class="form-control" name="timeend"/>
-                <span class="input-group-addon">
-                    <span class="glyphicon glyphicon-calendar"></span>
-                </span>
-            </div>
-        </div>
-    </div>
-
-
-    <div class='col-md-6'>
-  <div class="form-group">
-    <label for="exampleFormControlInput1">Number of student</label>
-    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="00">
-  </div>
-    </div>
-
-
-<div class='col-md-6'>
-
-  <div class="form-group">
-    <label for="exampleFormControlSelect1">Example select</label>
-    <select class="form-control" id="exampleFormControlSelect1">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-    </select>
-  </div>
-
-</div>
-  <div class="form-group">
-    <label for="exampleFormControlSelect2">Example multiple select</label>
-    <select multiple class="form-control" id="exampleFormControlSelect2">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlTextarea1">Example textarea</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
-  
-</form>
-</div>
-<div class = "col-md-6">
-<p>anik </p>
-</div>
-</div>
-</div>
 
 
         <div class="footer-copyright-area">
@@ -1182,7 +1176,7 @@
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
     <!-- bootstrap JS
 		============================================ -->
-    <script src="js/bootstrap.min.js"></script> 
+    <script src="js/bootstrap.min.js"></script>
     <!-- wow JS
 		============================================ -->
     <script src="js/wow.min.js"></script>
@@ -1251,42 +1245,39 @@
 
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
 
-<script src="https://cdn.jsdelivr.net/momentjs/2.14.1/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.14.1/moment.min.js"></script>
 
-<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
 
 
     <script type="text/javascript">
-    $(function () {
-	
-        $('#datetimepicker6').datetimepicker({
-                    format: 'LT'
-                });
-        $('#datetimepicker7').datetimepicker({
-            format: 'LT'
+        $(function() {
 
-            //Important! See issue #1075
+            $('#datetimepicker6').datetimepicker({
+                format: 'LT'
+            });
+            $('#datetimepicker7').datetimepicker({
+                format: 'LT'
+
+                //Important! See issue #1075
+            });
+            $("#datetimepicker6").on("dp.change", function(e) {
+                $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
+            });
+            $('#datetimepicker6').timepicker();
+            $('button').click(function() {
+                $('#datetimepicker6').focus();
+            });
+
         });
-        $("#datetimepicker6").on("dp.change", function (e) {
-            $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
-        });
-	$('#datetimepicker6').timepicker();
-$('button').click(function(){
-    $('#datetimepicker6').focus();
-});
-       
-    });
-
-
-    
-</script>
+    </script>
 </body>
 
 
