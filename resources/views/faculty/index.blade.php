@@ -1081,7 +1081,7 @@
             </div>
         </div>
 
-        <div class="container-fluid">
+        <div class="container-fluid ">
             <div class="row">
                 <div class="col-md-6">
 
@@ -1157,17 +1157,18 @@
             </div>
         </div>
 
-
-        <div class="footer-copyright-area">
-            <div class="container-fluid">
+        <div style="position: fixed; bottom: 0; width: 100%;">
+        <div class="footer-copyright-area " >
+            <div class="container-fluid" >
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="footer-copy-right">
-                            <p>Copyright © 2018. All rights reserved. Template by <a href="https://colorlib.com/wp/templates/">Colorlib</a></p>
+                        <div class="footer-copy-right" >
+                            <p>Copyright © 2018. All rights reserved. Daffodil International University</a></p>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </div>
 
